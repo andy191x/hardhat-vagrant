@@ -13,7 +13,7 @@ apt -y install build-essential
 
 # Install node
 # https://github.com/nodesource/distributions/blob/master/README.md
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 apt install -y nodejs
 which node || exit 1
 which npm || exit 1
