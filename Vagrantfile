@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
 
 	# provision
 	config.vm.provision "shell" do |script|
-		script.path = "./provision.sh"
+		script.path = "./dev-provision.sh"
 	end  
 
 	# Disable automatic box update checking. If you disable this, then
