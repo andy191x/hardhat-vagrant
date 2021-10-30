@@ -22,6 +22,11 @@ which npm || exit 1
 echo 'cd ~/project' >> /root/.profile
 echo '' >> /root/.profile
 
+# Add "hardhat" command alias
+echo '' >> /root/.bashrc
+echo 'alias hardhat="npx hardhat"' >> /root/.bashrc
+echo '' >> /root/.bashrc
+
 # Initialize project
 pushd /root/project
 bash project_init.sh
