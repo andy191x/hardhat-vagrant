@@ -18,6 +18,7 @@ Vagrant.configure("2") do |config|
 	config.vm.provider "virtualbox" do |vm|
 		vm.customize ["modifyvm", :id, "--memory", "4096"]
 		vm.customize ["modifyvm", :id, "--cpus", "4"]
+		# virtualbox symlink support (required by nodejs)
 		vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/root_project", "1"]
 	end
 
@@ -26,7 +27,7 @@ Vagrant.configure("2") do |config|
 
 	# provision
 	config.vm.provision "shell" do |script|
-		script.path = "./dev-provision.sh"
+		script.path = "./vagrant-provision.sh"
 	end  
 
 	# Disable automatic box update checking. If you disable this, then

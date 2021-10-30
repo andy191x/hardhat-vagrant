@@ -3,6 +3,12 @@
 LINE_PREFIX="hardhat-vagrant"
 cd /root
 
+# Sanity check
+if [ ! -d /home/vagrant ]; then
+	echo "$LINE_PREFIX: Environment sanity check failed. This script should only be run on guests."
+	exit 1
+fi
+
 # Install system utilities
 echo "$LINE_PREFIX: Installing system utilities..."
 
