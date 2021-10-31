@@ -3,6 +3,9 @@
 if [ "$1" == "destroy" ]; then
 	vagrant destroy -f
 	exit 0
+elif [ "$1" == "halt" ]; then
+	vagrant halt
+	exit 0
 fi
 
 if [ ! -f Vagrantfile ]; then

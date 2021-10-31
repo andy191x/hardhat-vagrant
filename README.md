@@ -12,6 +12,7 @@ One-step private development sandbox for [Hardhat](https://hardhat.org/)/[Solidi
 
 ```
 bash dev.sh           # (host)  spawn new VM. if the VM exists, a new terminal will be opened instead.
+bash dev.sh halt      # (host)  halt the VM.
 bash dev.sh destroy   # (host)  destroy the VM.
 hardhat <command>     # (guest) shortcut alias for "npx hardhat"
 ```
