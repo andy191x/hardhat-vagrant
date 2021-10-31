@@ -9,9 +9,9 @@ One-step private development sandbox for Hardhat/Solidity projects on Windows/Ma
 * Open a terminal, run: `bash dev.sh`.
 
 ```
-bash dev.sh        # (host)  spawn new VM. if the VM exists, a new terminal will be opened instead.
-vagrant destroy    # (host)  destroy the VM.
-hardhat <command>  # (guest) shortcut alias for "npx hardhat"
+bash dev.sh           # (host)  spawn new VM. if the VM exists, a new terminal will be opened instead.
+bash dev.sh destroy   # (host)  destroy the VM.
+hardhat <command>     # (guest) shortcut alias for "npx hardhat"
 ```
 
 ## Prerequisites (Windows 10)
