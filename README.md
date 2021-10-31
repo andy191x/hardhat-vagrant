@@ -1,6 +1,8 @@
 # hardhat-vagrant
 
-One-step private development sandbox for Hardhat/Solidity projects on Windows/Mac/Linux desktops.
+One-step private development sandbox for [Hardhat](https://hardhat.org/)/[Solidity](https://soliditylang.org/) projects on Windows/Mac/Linux desktops.
+
+![Hardhat Screenshot](github/screenshot.jpg?raw=true "Hardhat Screenshot")
 
 ## Usage
 
