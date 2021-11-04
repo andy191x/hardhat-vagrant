@@ -29,6 +29,10 @@ apt install -y nodejs
 #which node || exit 1
 #which npm || exit 1
 
+# Install solhint
+echo "$LINE_PREFIX: Installing solhint..."
+npm install -g solhint
+
 # Install solc
 echo "$LINE_PREFIX: Installing solc..."
 
