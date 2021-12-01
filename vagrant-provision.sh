@@ -57,7 +57,6 @@ echo '' >> /root/.bashrc
 echo 'alias hardhat="npx hardhat"' >> /root/.bashrc
 echo '' >> /root/.bashrc
 
-
 # Initialize project
 echo "$LINE_PREFIX: Initializing project..."
 
@@ -73,6 +72,11 @@ else
 	#npm config set bin-links=false
 	npm install --save-dev hardhat
 	npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+fi
+
+# Run project installer
+if [ -f "vagrant-project.sh" ]; then
+	bash vagrant-project.sh
 fi
 
 # Finalize install
